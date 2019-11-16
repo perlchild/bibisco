@@ -38,6 +38,9 @@ ipc.on('logger-error', function (event, arg) {
   logger.error(arg);
 });
 
+// electron version
+logger.info('*** Electron version: ' + process.versions.electron);
+
 // add debug features like hotkeys for triggering dev tools and reload
 if (isDev) {
   logger.debug('Running in development -  global path:' + __dirname);
