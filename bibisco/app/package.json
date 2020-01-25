@@ -43,7 +43,8 @@
     "finalize-export-linux": "chmod -R 777 /home/test/work/release-builds && shx cp -u /home/test/work/release-builds/*.zip /media/sf_transfer_folder",
     "export-linux-ce": "npm run set-environment-ce && npm run package-linux && npm run zip-linux-ce && npm run finalize-export-linux",
     "export-linux-se": "npm run set-environment-se && npm run package-linux && npm run zip-linux-se && npm run finalize-export-linux",
-    "export-linux": "npm run prepare-export-linux && npm run export-linux-ce && npm run export-linux-se"
+    "export-linux": "npm run prepare-export-linux && npm run export-linux-ce && npm run export-linux-se",
+    "snapcraft": "snapcraft prime"
   },
   "files": [
     "index.js",
